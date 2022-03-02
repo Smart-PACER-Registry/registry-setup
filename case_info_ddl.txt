@@ -9,7 +9,7 @@ create table case_info
     patient_identifier varchar(510)                        not null,
     person_id          integer                             not null,
     job_id             varchar(50),
-    status             varchar(12)                         not null,
+    status             varchar(50)                         not null,
     status_url         varchar(255),
     server_url         varchar(255)                        not null,
     trigger_at         timestamp,
