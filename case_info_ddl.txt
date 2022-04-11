@@ -1,11 +1,11 @@
 -- auto-generated definition
 create table case_info
 (
-    activated          timestamp,
-    created            timestamp default CURRENT_TIMESTAMP not null,
     case_info_id       bigint                              not null
         constraint case_info_pk
             primary key,
+    activated          timestamp,
+    created            timestamp default CURRENT_TIMESTAMP not null,
     patient_identifier varchar(510)                        not null,
     person_id          integer                             not null,
     job_id             varchar(50),
